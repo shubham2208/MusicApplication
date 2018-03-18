@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="C:\Users\Shubham\Desktop\Music\Music\music.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="music.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<!--			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!--		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+</head>
+
+<body>
+
+	<!-- Brand/logo -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand justify-content-center" href="#"><i class="fas fa-music fa-2x logocolor "></i>
+<!--			<p>Mix<span class="ncolor">N</span>Match</p>-->
+			</a>
+
+
+<!--Collapse Button-->
+			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#collapse_target" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+<!--Link-->
+			<div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Wow</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+	</nav>
+	
+<!--	Content start -->
+
+	<div class="container-fluid content">
+		<div class="container center-music">
+			<h1 class="text-center musi">MUSIC QUEST</h1>
+			<p class="text-center demo">A demo Music Search Application using Spotify Web-API</p>
+		</div>
+		
+<!--  search and filter button-->
+	
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+
+
+					<form class="justify-content-center row ">
+
+						<div class="col-12">
+
+							<input type="text" id="txtCity" class="form-control " placeholder="Search for..." autocomplete="on">
+
+						</div>
+
+
+						<div class="col-12 text-center btngroup">
+							<button id="btn" class="btn btn-light btn-lg mybtn mr-2" type="button">Search</button>
+							<button id="btn1" class="btn btn-light btn-lg mybtn" type="button">Filter</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		
+<!--	demo -->
+		<div class="row justify-content-center">
+		<div class="col-3"></div>
+		<div class="col-5">
+			<div id="resultDiv"></div>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	
+
+	</div>
+	\
+	<!--Output table-->
+	<div class="container mytable">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th>Spotify ID<i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></th>
+					<th class="asc desc">Track Name<i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></th>
+					<th class="asc desc">Album Name<i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></th>
+					<th class="asc desc">Duration(sec)<i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></th>
+					<th class="asc desc">Popularity<i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></th>
+				</tr>
+			</thead>
+			<tbody id="table">
+
+				
+			</tbody>
+		</table>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<h3 class="text-center">NO SEARCH RESULT</h3>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<a href="#"><i class="fas fa-arrow-alt-circle-left fa-3x mr-5 arrow" id="prev"></i></a>
+			<a href="#"><i class="fas fa-arrow-alt-circle-right fa-3x arrow" id="next"></i></a>
+		</div>
+	</div>
+
+
+
+	<a href="#" class="back-to-top">
+ 
+<i class="fa fa-arrow-circle-up fa-3x"></i>
+ 
+</a>
+	<script src="music.js"></script>
+
+</body>
+
+</html>
